@@ -4,4 +4,4 @@ Echoreで使用しているリソースパックです
 
 *リポジトリの更新は保証しません
 
-ライセンス [MIT License](./LICENSE)
+ライセンス [Apache 2.0 License](./LICENSE)
