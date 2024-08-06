@@ -1,0 +1,68 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "starpve:shaman_darkness_assist_f",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/particle/cube"
+			}
+		},
+		"components": {
+			"minecraft:emitter_local_space": {
+				"position": true,
+				"rotation": false
+			},
+			"minecraft:emitter_rate_instant": {
+				"num_particles": 1
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 1
+			},
+			"minecraft:emitter_shape_point": {
+				"offset": [
+					"(v.particle_random_1 - 0.5) * 2",
+					3,
+					"(v.particle_random_2 - 0.5) * 2"
+				],
+				"direction": [
+					"-(v.particle_random_1 - 0.5) * 0.5",
+					-1,
+					"-(v.particle_random_2 - 0.5) * 0.5"
+				]
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": "math.random(0.3, 0.5)"
+			},
+			"minecraft:particle_expire_if_not_in_blocks": [
+				"minecraft:air"
+			],
+			"minecraft:particle_initial_speed": 1,
+			"minecraft:particle_appearance_billboard": {
+				"size": [
+					"1.8 * (1 - ((math.abs(v.particle_random_1 - 0.5) + math.abs(v.particle_random_2 - 0.5)) / 2) * 0.5)",
+					0.015
+				],
+				"facing_camera_mode": "lookat_direction",
+				"direction": {
+					"mode": "custom",
+					"custom_direction": [
+						"-(v.particle_random_1 - 0.5) * (0.8 + (v.particle_random_3 - 0.5) * 0.5)",
+						-1,
+						"-(v.particle_random_2 - 0.5) * (0.8 + (v.particle_random_3 - 0.5) * 0.5)"
+					]
+				}
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": {
+					"interpolant": "v.particle_age / v.particle_lifetime",
+					"gradient": {
+						"0.0": "#FFFA6464",
+						"0.66": "#FFFA6464",
+						"1.0": "#FF000000"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.weapons.spear.attack": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": ["95.0 + variable.is_using_vr * 7.5", "-45.0 + variable.is_using_vr * 7.5", "115.0 + variable.is_using_vr * -2.5"],
+					"position": [13.5, -10, 12],
+					"scale": 100
+				},
+				"rightItem": {
+					"scale": [1, 4.7, 1]
+				}
+			}
+		}
+	}
+}

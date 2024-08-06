@@ -1,0 +1,10 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.player.weapon.spear": {
+			"states": {
+				"default": {}
+			}
+		}
+	}
+}

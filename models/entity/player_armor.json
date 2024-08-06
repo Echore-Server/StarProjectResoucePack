@@ -1,0 +1,228 @@
+{
+	"format_version": "1.8.0",
+	"geometry.player.armor.base": {
+		"texturewidth": 64,
+		"textureheight": 32,
+		"visible_bounds_width": 101,
+		"visible_bounds_height": 74,
+		"visible_bounds_offset": [0, 20, 0],
+		"bones": [
+			{
+				"name": "waist",
+				"pivot": [0, 12, 0]
+			},
+			{
+				"name": "body",
+				"parent": "waist",
+				"pivot": [0, 24, 0],
+				"cubes": [
+					{"origin": [-4, 12, -2], "size": [8, 12, 4], "uv": [16, 16]}
+				]
+			},
+			{
+				"name": "head",
+				"parent": "body",
+				"pivot": [0, 24, 0],
+				"cubes": [
+					{"origin": [-4, 24, -4], "size": [8, 8, 8], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "hat",
+				"parent": "head",
+				"pivot": [0, 24, 0],
+				"cubes": [
+					{"origin": [-4, 24, -4], "size": [8, 8, 8], "uv": [32, 0], "inflate": 0.5}
+				]
+			},
+			{
+				"name": "rightArm",
+				"parent": "body",
+				"pivot": [-5, 22, 0],
+				"cubes": [
+					{"origin": [-8, 12, -2], "size": [4, 12, 4], "uv": [40, 16]}
+				]
+			},
+			{
+				"name": "rightItem",
+				"parent": "rightArm",
+				"pivot": [-6, 15, 1]
+			},
+			{
+				"name": "leftArm",
+				"parent": "body",
+				"pivot": [5, 22, 0],
+				"mirror": true,
+				"cubes": [
+					{"origin": [4, 12, -2], "size": [4, 12, 4], "uv": [40, 16]}
+				]
+			},
+			{
+				"name": "rightLeg",
+				"parent": "body",
+				"pivot": [-1.9, 12, 0],
+				"cubes": [
+					{"origin": [-3.9, 0, -2], "size": [4, 12, 4], "uv": [0, 16]}
+				]
+			},
+			{
+				"name": "leftLeg",
+				"parent": "body",
+				"pivot": [1.9, 12, 0],
+				"mirror": true,
+				"cubes": [
+					{"origin": [-0.1, 0, -2], "size": [4, 12, 4], "uv": [0, 16]}
+				]
+			}
+		]
+	},
+	"geometry.player.armor1:geometry.player.armor.base": {
+		"bones": [
+			{
+				"name": "head",
+				"inflate": 1
+			},
+			{
+				"name": "hat",
+				"inflate": 1.5,
+				"neverRender": false
+			},
+			{
+				"name": "body",
+				"inflate": 1.01
+			},
+			{
+				"name": "rightArm",
+				"inflate": 1
+			},
+			{
+				"name": "leftArm",
+				"inflate": 1
+			},
+			{
+				"name": "rightLeg",
+				"inflate": 1
+			},
+			{
+				"name": "leftLeg",
+				"inflate": 1
+			}
+		]
+	},
+	"geometry.player.armor.helmet:geometry.player.armor1": {
+		"bones": [
+			{
+				"name": "body",
+				"reset": true
+			},
+			{
+				"name": "rightArm",
+				"reset": true
+			},
+			{
+				"name": "leftArm",
+				"reset": true
+			},
+			{
+				"name": "rightLeg",
+				"reset": true
+			},
+			{
+				"name": "leftLeg",
+				"reset": true
+			}
+		]
+	},
+	"geometry.player.armor.chestplate:geometry.player.armor1": {
+		"bones": [
+			{
+				"name": "head",
+				"reset": true
+			},
+			{
+				"name": "hat",
+				"reset": true
+			},
+			{
+				"name": "rightLeg",
+				"reset": true
+			},
+			{
+				"name": "leftLeg",
+				"reset": true
+			}
+		]
+	},
+	"geometry.player.armor.boots:geometry.player.armor1": {
+		"bones": [
+			{
+				"name": "head",
+				"reset": true
+			},
+			{
+				"name": "hat",
+				"reset": true
+			},
+			{
+				"name": "body",
+				"reset": true
+			},
+			{
+				"name": "rightArm",
+				"reset": true
+			},
+			{
+				"name": "leftArm",
+				"reset": true
+			}
+		]
+	},
+	"geometry.player.armor2:geometry.player.armor.base": {
+		"bones": [
+			{
+				"name": "head",
+				"inflate": 0.5
+			},
+			{
+				"name": "body",
+				"inflate": 0.5
+			},
+			{
+				"name": "rightArm",
+				"inflate": 0.5
+			},
+			{
+				"name": "leftArm",
+				"inflate": 0.5
+			},
+			{
+				"name": "rightLeg",
+				"inflate": 0.49
+			},
+			{
+				"name": "leftLeg",
+				"inflate": 0.49
+			}
+		]
+	},
+	"geometry.player.armor.leggings:geometry.player.armor2": {
+		"bones": [
+			{
+				"name": "head",
+				"reset": true
+			},
+			{
+				"name": "hat",
+				"reset": true
+			},
+			{
+				"name": "rightArm",
+				"reset": true
+			},
+			{
+				"name": "leftArm",
+				"reset": true
+			}
+		]
+	}
+}

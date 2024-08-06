@@ -1,0 +1,14 @@
+{
+	"hud_tip_text": {
+		"offset": [
+			"25%", // changed
+			-42
+		]
+	},
+	"hud_actionbar_text": {
+		"offset": [
+			"-25%", // changed
+			"50%-68px"
+		]
+	}
+}
