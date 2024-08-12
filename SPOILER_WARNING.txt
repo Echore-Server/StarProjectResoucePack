@@ -1,4 +1,5 @@
 以下のフォルダ内にはゲーム/ストーリーのネタバレが含まれます。
+textures/
 particles/
 models/
 entity/
@@ -6,6 +7,7 @@ animations/
 animation_controllers/
 
 The following folders contain game and story spoilers.
+textures/
 particles/
 models/
 entity/
