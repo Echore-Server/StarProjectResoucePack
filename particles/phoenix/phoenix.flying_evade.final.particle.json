@@ -2,16 +2,15 @@
 	"format_version": "1.10.0",
 	"particle_effect": {
 		"description": {
-			"identifier": "starpve:phoenix_undying",
+			"identifier": "starpve:phoenix_flying_evade_final",
 			"basic_render_parameters": {
 				"material": "particles_blend",
 				"texture": "textures/particle/particles"
 			}
 		},
 		"components": {
-			"minecraft:emitter_rate_steady": {
-				"spawn_rate": 40,
-				"max_particles": 100
+			"minecraft:emitter_rate_instant": {
+				"num_particles": 140
 			},
 			"minecraft:emitter_lifetime_once": {
 				"active_time": 1
@@ -19,7 +18,9 @@
 			"minecraft:emitter_lifetime_events": {
 				"creation_event": "reset"
 			},
-			"minecraft:emitter_shape_entity_aabb": {
+			"minecraft:emitter_shape_sphere": {
+				"radius": 1,
+				"surface_only": true,
 				"direction": "outwards"
 			},
 			"minecraft:particle_lifetime_expression": {
@@ -31,7 +32,7 @@
 			"minecraft:particle_lifetime_events": {
 				"creation_event": "increment"
 			},
-			"minecraft:particle_initial_speed": 1,
+			"minecraft:particle_initial_speed": 20,
 			"minecraft:particle_motion_dynamic": {
 				"linear_acceleration": [
 					"math.random(-1, 1) * 10",
@@ -42,8 +43,8 @@
 			},
 			"minecraft:particle_appearance_billboard": {
 				"size": [
-					0.1,
-					0.1
+					"0.7 - (v.particle_age / v.particle_lifetime) * 0.6",
+					"0.7 - (v.particle_age / v.particle_lifetime) * 0.6"
 				],
 				"facing_camera_mode": "rotate_xyz",
 				"uv": {
