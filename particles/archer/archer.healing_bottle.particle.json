@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"particle_effect": {
 		"description": {
-			"identifier": "starpve:shaman_silkworm_erosion_invoke",
+			"identifier": "starpve:archer_healing_bottle",
 			"basic_render_parameters": {
 				"material": "particles_blend",
 				"texture": "textures/particle/particles"
@@ -10,43 +10,44 @@
 		},
 		"components": {
 			"minecraft:emitter_rate_instant": {
-				"num_particles": 50
+				"num_particles": 120
 			},
 			"minecraft:emitter_lifetime_once": {
 				"active_time": 1
 			},
 			"minecraft:emitter_shape_disc": {
-				"radius": 1.75,
-				"plane_normal": [
-					"v.px",
-					"v.py",
-					"v.pz"
+				"offset": [
+					0,
+					0.1,
+					0
 				],
+				"radius": 4.125,
+				"plane_normal": "y",
 				"direction": [
-					"v.px",
-					"v.py",
-					"v.pz"
+					0,
+					1,
+					0
 				]
 			},
 			"minecraft:particle_lifetime_expression": {
-				"max_lifetime": "math.random(0.8, 1.3)"
+				"max_lifetime": "math.random(0.8, 1.7)"
 			},
 			"minecraft:particle_expire_if_not_in_blocks": [
 				"minecraft:air"
 			],
-			"minecraft:particle_initial_spin": {
-				"rotation": "math.random(0, 360)",
-				"rotation_rate": "(v.particle_random_1 - 0.5) * 360"
-			},
-			"minecraft:particle_initial_speed": "-2.5 + v.particle_random_1 * 25",
+			"minecraft:particle_initial_speed": "v.particle_random_1 * 3",
 			"minecraft:particle_motion_dynamic": {
-				"linear_drag_coefficient": 2.6,
-				"rotation_acceleration": 200
+				"linear_acceleration": [
+					0,
+					-3,
+					0
+				],
+				"linear_drag_coefficient": 0.7
 			},
 			"minecraft:particle_appearance_billboard": {
 				"size": [
-					"0.3 - v.particle_age * 0.15",
-					"0.3 - v.particle_age * 0.15"
+					0.15,
+					0.15
 				],
 				"facing_camera_mode": "rotate_xyz",
 				"uv": {
@@ -70,13 +71,17 @@
 					}
 				}
 			},
+			"minecraft:particle_motion_collision": {
+				"collision_drag": 2.5,
+				"collision_radius": 0.1
+			},
 			"minecraft:particle_appearance_tinting": {
 				"color": {
-					"interpolant": "v.particle_age / v.particle_lifetime",
+					"interpolant": "v.particle_random_2",
 					"gradient": {
-						"0.0": "#FF9A00FD",
-						"0.66": "#FF2B0B4B",
-						"1.0": "#FF000000"
+						"0.0": "#FFFFE368",
+						"0.5": "#FF8EFF95",
+						"1.0": "#FF8EFF95"
 					}
 				}
 			}
