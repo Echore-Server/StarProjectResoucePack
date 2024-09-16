@@ -1,36 +1,36 @@
 {
-	"format_version": 1,
-	"header": {
-		"description": "Created by Echore Server Developer Team",
-		"name": "Star Project",
-		"uuid": "4a141d53-6e17-437b-8ab9-942ac07d2b0d",
-		"version": [
-			2,
-			1,
-			0
-		]
-	},
-	"modules": [
-		{
-			"description": "",
-			"type": "resources",
-			"uuid": "dfd5a3de-6ae7-4abd-b6c4-7bf255cab921",
-			"version": [
-				2,
-				0,
-				386
-			]
-		}
-	],
-	"metadata": {
-		"generated_with": {
-			"blockbench_entity_wizard": [
-				"1.3.1",
-				"1.5.0"
-			],
-			"pmmp_auto_resource_pack_updater": [
-				"1.0.0"
-			]
-		}
-	}
+    "format_version": 1,
+    "header": {
+        "description": "Created by Echore Server Developer Team",
+        "name": "Star Project",
+        "uuid": "4a141d53-6e17-437b-8ab9-942ac07d2b0d",
+        "version": [
+            2,
+            1,
+            2
+        ]
+    },
+    "modules": [
+        {
+            "description": "",
+            "type": "resources",
+            "uuid": "dfd5a3de-6ae7-4abd-b6c4-7bf255cab921",
+            "version": [
+                2,
+                1,
+                2
+            ]
+        }
+    ],
+    "metadata": {
+        "generated_with": {
+            "blockbench_entity_wizard": [
+                "1.3.1",
+                "1.5.0"
+            ],
+            "pmmp_auto_resource_pack_updater": [
+                "1.0.0"
+            ]
+        }
+    }
 }
