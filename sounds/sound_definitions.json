@@ -161,6 +161,18 @@
 				}
 			]
 		},
+		"random.break.larger": {
+			"__use_legacy_max_distance": "true",
+			"category": "player",
+			"max_distance": null,
+			"min_distance": null,
+			"sounds": [
+				{
+					"name": "sounds/random/break",
+					"volume": 2.4
+				}
+			]
+		},
 		"block.false_permissions.larger": {
 			"__use_legacy_max_distance": "true",
 			"category": "block",
