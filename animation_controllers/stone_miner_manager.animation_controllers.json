@@ -5,22 +5,41 @@
 			"states": {
 				"default": {
 					"transitions": [
-						{"aim": "q.variant == 1"}
+						{"aim": "q.variant == -1"},
+						{"pre_slash": "q.variant == -2"}
 					],
 					"blend_transition": 0.1
 				},
 				"aim": {
 					"animations": ["aim"],
 					"transitions": [
+						{"aim_loop": "q.any_animation_finished"}
+					]
+				},
+				"aim_loop": {
+					"animations": ["aim_loop"],
+					"transitions": [
 						{"shoot": "q.variant == 2"}
-					],
-					"blend_transition": 0.1
+					]
 				},
 				"shoot": {
 					"animations": ["shoot"],
 					"transitions": [
 						{"default": "q.variant == 0"}
 					]
+				},
+				"pre_slash": {
+					"animations": ["pre_slash"],
+					"transitions": [
+						{"slash1": "q.variant == 1"}
+					]
+				},
+				"slash1": {
+					"animations": ["slash1"],
+					"transitions": [
+						{"default": "q.variant == 0"}
+					],
+					"blend_transition": 0.5
 				}
 			}
 		}

@@ -1,56 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.stone_miner_manager.attack_bare_hand": {
-			"loop": true,
-			"bones": {
-				"leftarm": {
-					"rotation": [
-						"-90.0 - ((math.sin(variable.attack_time * 180.0) * 57.3) * 1.2 - (math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0) * 57.3) * 0.4) - (math.sin(query.life_time * 76.776372) * 2.865) - this",
-						"5.73 - ((math.sin(variable.attack_time * 180.0) * 57.3) * 0.6) - this",
-						"math.cos(query.life_time * 103.13244) * -2.865 - 2.865 - this"
-					]
-				},
-				"rightarm": {
-					"rotation": [
-						"90.0 * (variable.is_brandishing_spear - 1.0) - ((math.sin(variable.attack_time * 180.0) * 57.3) * 1.2 - (math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0) * 57.3) * 0.4) + (math.sin(query.life_time * 76.776372) * 2.865) - this",
-						"(math.sin(variable.attack_time * 180.0) * 57.3) * 0.6 - 5.73 - this",
-						"math.cos(query.life_time * 103.13244) * 2.865 + 2.865 - this"
-					]
-				}
-			}
-		},
-		"animation.stone_miner_manager.swimming": {
-			"loop": true,
-			"bones": {
-				"body": {
-					"position": [0, "variable.swim_amount * -10.0 - this", "variable.swim_amount * 9.0 - this"],
-					"rotation": ["variable.swim_amount * (90.0 + query.target_x_rotation)", 0, 0]
-				},
-				"leftarm": {
-					"rotation": [
-						"math.lerp(this, -180.0, variable.swim_amount) - (variable.swim_amount * ((math.sin(variable.attack_time * 180.0) * 57.3) * 1.2 - (math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0) * 57.3) * 0.4)) - (variable.swim_amount * (math.sin(query.life_time * 76.776372) * 2.865)) - this",
-						"math.lerp(this, 14.325, variable.swim_amount) - this",
-						"math.lerp(this, 14.325, variable.swim_amount) - (variable.swim_amount * (math.cos(query.life_time * 103.13244) * 2.865 + 2.865)) - this"
-					]
-				},
-				"leftleg": {
-					"rotation": ["math.lerp(this, math.cos(query.life_time * 390.0 + 180.0) * 0.3, variable.swim_amount)", 0, 0]
-				},
-				"rightarm": {
-					"rotation": [
-						"math.lerp(this, -180.0, variable.swim_amount) - (variable.swim_amount * ((math.sin(variable.attack_time * 180.0) * 57.3) * 1.2 - (math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0) * 57.3) * 0.4)) + (variable.swim_amount * (math.sin(query.life_time * 76.776372) * 2.865)) - this",
-						"math.lerp(this, 14.325, variable.swim_amount) - this",
-						"math.lerp(this, -14.325, variable.swim_amount) + (variable.swim_amount * (math.cos(query.life_time * 103.13244) * 2.865 + 2.865)) - this"
-					]
-				},
-				"rightleg": {
-					"rotation": ["math.lerp(this, math.cos(query.life_time * 390.0) * 0.3, variable.swim_amount)", 0, 0]
-				}
-			}
-		},
 		"animation.stone_miner_manager.aim": {
-			"loop": "hold_on_last_frame",
 			"animation_length": 1,
 			"override_previous_animation": true,
 			"bones": {
@@ -173,6 +124,34 @@
 						"0.0": [0, 0, 0],
 						"0.7083": [0, 0, 0]
 					}
+				}
+			}
+		},
+		"animation.stone_miner_manager.aim_loop": {
+			"loop": true,
+			"animation_length": 0.4583,
+			"override_previous_animation": true,
+			"bones": {
+				"body": {
+					"rotation": [0, -45, 0]
+				},
+				"head": {
+					"rotation": [0, 43.5, 0]
+				},
+				"rightArm": {
+					"rotation": [-87.71112, 42.45005, 0]
+				},
+				"rightItem": {
+					"rotation": [90, 0, 0]
+				},
+				"leftArm": {
+					"rotation": [15, 0, 0]
+				},
+				"rightLeg": {
+					"rotation": [-25.35138, 56.54853, -3.95007]
+				},
+				"leftLeg": {
+					"rotation": [0, 0, 0]
 				}
 			}
 		},
@@ -330,6 +309,89 @@
 						"0.0": [90, 0, 0],
 						"0.9167": [90, 0, 0],
 						"1.4583": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.stone_miner_manager.pre_slash": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"override_previous_animation": true,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [10, 0, 0]
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [-76.38451, -43.83818, -13.87118]
+					}
+				},
+				"rightItem": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [90, 0, 0]
+					}
+				},
+				"leftLeg": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [-32.5, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.stone_miner_manager.slash1": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.7083,
+			"override_previous_animation": true,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": [10, 0, 0],
+						"0.0417": [10.19482, 6.12225, 0.3018],
+						"0.0833": [10.66713, 11.04295, 0.40406],
+						"0.125": [11.29738, 15.52954, 0.40021],
+						"0.1667": [12, 19.63313, 0.33541],
+						"0.2083": [12.70262, 23.31913, 0.23839],
+						"0.25": [13.33287, 26.48345, 0.13235],
+						"0.2917": [13.80518, 28.90124, 0.0416],
+						"0.3333": [14, 30, 0]
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [-76.38451, -43.83818, -13.87118],
+						"0.0417": [-76.52193, -10.30361, -13.1834],
+						"0.0833": [-76.85509, 1.03171, -11.51593],
+						"0.125": [-77.29967, 8.57887, -9.29089],
+						"0.1667": [-77.79528, 14.08387, -6.81037],
+						"0.2083": [-78.29089, 18.21358, -4.32985],
+						"0.25": [-78.73546, 21.29595, -2.1048],
+						"0.2917": [-79.06863, 23.51039, -0.43733],
+						"0.3333": [-79.20605, 24.95206, 0.25045]
+					}
+				},
+				"rightItem": {
+					"rotation": [90, 0, 0]
+				},
+				"leftLeg": {
+					"rotation": [-32.5, 0, 0]
+				},
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0417": [9.76099, 0, 0],
+						"0.0833": [21.34162, 0, 0],
+						"0.125": [26.22823, 0, 0],
+						"0.1667": [29.11892, 0, 0],
+						"0.2083": [31.15806, 0, 0],
+						"0.25": [32.71848, 0, 0],
+						"0.2917": [33.96857, 0, 0],
+						"0.3333": [35, 0, 0]
 					}
 				}
 			}
