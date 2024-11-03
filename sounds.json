@@ -1,6 +1,23 @@
 {
 	"entity_sounds": {
 		"entities": {
+			"starproject:stone_miner_manager": {
+				"events": {
+					"ambient": "mob.husk.ambient",
+					"death": "mob.husk.death",
+					"hurt": "mob.husk.hurt",
+					"step": {
+						"pitch": 1,
+						"sound": "mob.husk.step",
+						"volume": 0.35
+					}
+				},
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"volume": 1
+			},
 			"starproject:awaken_husk": {
 				"events": {
 					"ambient": "mob.husk.ambient",
@@ -12,7 +29,10 @@
 						"volume": 0.35
 					}
 				},
-				"pitch": [0.8, 1.2],
+				"pitch": [
+					0.8,
+					1.2
+				],
 				"volume": 1
 			},
 			"starproject:darkened_husk": {
@@ -26,7 +46,10 @@
 						"volume": 0.35
 					}
 				},
-				"pitch": [0.8, 1.2],
+				"pitch": [
+					0.8,
+					1.2
+				],
 				"volume": 1
 			}
 		}

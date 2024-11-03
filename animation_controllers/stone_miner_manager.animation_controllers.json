@@ -1,0 +1,28 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.stone_miner_manager.shot": {
+			"states": {
+				"default": {
+					"transitions": [
+						{"aim": "q.variant == 1"}
+					],
+					"blend_transition": 0.1
+				},
+				"aim": {
+					"animations": ["aim"],
+					"transitions": [
+						{"shoot": "q.variant == 2"}
+					],
+					"blend_transition": 0.1
+				},
+				"shoot": {
+					"animations": ["shoot"],
+					"transitions": [
+						{"default": "q.variant == 0"}
+					]
+				}
+			}
+		}
+	}
+}
