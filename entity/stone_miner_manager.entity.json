@@ -7,6 +7,9 @@
 			"materials": {
 				"default": "husk"
 			},
+			"particle_effects": {
+				"trail": "starpve:stone_miner_manager.anim.trail"
+			},
 			"textures": {
 				"default": "textures/entity/stone_miner_manager"
 			},
@@ -41,7 +44,10 @@
 				"shoot": "animation.stone_miner_manager.shoot",
 				"aim_loop": "animation.stone_miner_manager.aim_loop",
 				"pre_slash": "animation.stone_miner_manager.pre_slash",
-				"slash1": "animation.stone_miner_manager.slash1"
+				"slash1": "animation.stone_miner_manager.slash1",
+				"phase2": "animation.stone_miner_manager.phase2",
+				"slash2": "animation.stone_miner_manager.slash2",
+				"slash1_short": "animation.stone_miner_manager.slash1_short"
 			},
 			"animation_controllers": [
 				{

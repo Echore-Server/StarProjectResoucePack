@@ -5,39 +5,101 @@
 			"states": {
 				"default": {
 					"transitions": [
-						{"aim": "q.variant == -1"},
-						{"pre_slash": "q.variant == -2"}
+						{
+							"aim": "q.variant == -1"
+						},
+						{
+							"pre_slash": "q.variant == -2"
+						},
+						{
+							"phase2": "q.variant == -3"
+						}
 					],
 					"blend_transition": 0.1
 				},
 				"aim": {
-					"animations": ["aim"],
+					"animations": [
+						"aim"
+					],
 					"transitions": [
-						{"aim_loop": "q.any_animation_finished"}
+						{
+							"aim_loop": "q.any_animation_finished"
+						}
 					]
 				},
 				"aim_loop": {
-					"animations": ["aim_loop"],
+					"animations": [
+						"aim_loop"
+					],
 					"transitions": [
-						{"shoot": "q.variant == 2"}
+						{
+							"shoot": "q.variant == 2"
+						}
 					]
 				},
 				"shoot": {
-					"animations": ["shoot"],
+					"animations": [
+						"shoot"
+					],
 					"transitions": [
-						{"default": "q.variant == 0"}
+						{
+							"default": "q.variant == 0"
+						}
 					]
 				},
 				"pre_slash": {
-					"animations": ["pre_slash"],
+					"animations": [
+						"pre_slash"
+					],
 					"transitions": [
-						{"slash1": "q.variant == 1"}
+						{
+							"slash1": "q.variant == 1"
+						},
+						{
+							"double_slash1": "q.variant == 2"
+						}
 					]
 				},
 				"slash1": {
-					"animations": ["slash1"],
+					"animations": [
+						"slash1"
+					],
 					"transitions": [
-						{"default": "q.variant == 0"}
+						{
+							"default": "q.variant == 0"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"phase2": {
+					"animations": [
+						"phase2"
+					],
+					"transitions": [
+						{
+							"aim": "q.any_animation_finished"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"double_slash1": {
+					"animations": [
+						"slash1_short"
+					],
+					"transitions": [
+						{
+							"slash2": "q.variant == 1"
+						}
+					]
+				},
+				"slash2": {
+					"animations": [
+						"slash2"
+					],
+					"transitions": [
+						{
+							"default": "q.variant == 0"
+						}
 					],
 					"blend_transition": 0.5
 				}
