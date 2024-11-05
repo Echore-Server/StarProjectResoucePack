@@ -13,6 +13,9 @@
 						},
 						{
 							"phase2": "q.variant == -3"
+						},
+						{
+							"fanning_aim": "q.variant == -4"
 						}
 					],
 					"blend_transition": 0.1
@@ -24,6 +27,9 @@
 					"transitions": [
 						{
 							"aim_loop": "q.any_animation_finished"
+						},
+						{
+							"default": "q.variant == 0"
 						}
 					]
 				},
@@ -34,6 +40,9 @@
 					"transitions": [
 						{
 							"shoot": "q.variant == 2"
+						},
+						{
+							"default": "q.variant == 0"
 						}
 					]
 				},
@@ -57,6 +66,9 @@
 						},
 						{
 							"double_slash1": "q.variant == 2"
+						},
+						{
+							"default": "q.variant == 0"
 						}
 					]
 				},
@@ -78,6 +90,9 @@
 					"transitions": [
 						{
 							"aim": "q.any_animation_finished"
+						},
+						{
+							"default": "q.variant == 0"
 						}
 					],
 					"blend_transition": 0.5
@@ -89,12 +104,26 @@
 					"transitions": [
 						{
 							"slash2": "q.variant == 1"
+						},
+						{
+							"default": "q.variant == 0"
 						}
 					]
 				},
 				"slash2": {
 					"animations": [
 						"slash2"
+					],
+					"transitions": [
+						{
+							"default": "q.variant == 0"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"fanning_aim": {
+					"animations": [
+						"fanning_aim"
 					],
 					"transitions": [
 						{
