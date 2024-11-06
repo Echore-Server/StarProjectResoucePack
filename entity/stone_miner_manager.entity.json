@@ -48,7 +48,8 @@
 				"phase2": "animation.stone_miner_manager.phase2",
 				"slash2": "animation.stone_miner_manager.slash2",
 				"slash1_short": "animation.stone_miner_manager.slash1_short",
-				"fanning_aim": "animation.stone_miner_manager.fanning_aim"
+				"fanning_aim": "animation.stone_miner_manager.fanning_aim",
+				"stunning": "animation.stone_miner_manager.stunning"
 			},
 			"animation_controllers": [
 				{

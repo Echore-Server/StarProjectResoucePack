@@ -16,6 +16,9 @@
 						},
 						{
 							"fanning_aim": "q.variant == -4"
+						},
+						{
+							"stunning": "q.variant == -5"
 						}
 					],
 					"blend_transition": 0.1
@@ -124,6 +127,17 @@
 				"fanning_aim": {
 					"animations": [
 						"fanning_aim"
+					],
+					"transitions": [
+						{
+							"default": "q.variant == 0"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"stunning": {
+					"animations": [
+						"stunning"
 					],
 					"transitions": [
 						{
