@@ -1,0 +1,55 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "starpve:ability_target",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/particle/particles"
+			}
+		},
+		"components": {
+			"minecraft:emitter_local_space": {
+				"position": true,
+				"rotation": false
+			},
+			"minecraft:emitter_rate_instant": {
+				"num_particles": 1
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": "5/20"
+			},
+			"minecraft:emitter_shape_point": {},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": "6/20"
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": [
+					0.5,
+					0.5
+				],
+				"facing_camera_mode": "lookat_y",
+				"uv": {
+					"texture_width": 128,
+					"texture_height": 128,
+					"uv": [
+						"8 *1",
+						"8 * 4"
+					],
+					"uv_size": [
+						8,
+						8
+					]
+				}
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": [
+					1,
+					0.47843,
+					0.47843,
+					1
+				]
+			}
+		}
+	}
+}

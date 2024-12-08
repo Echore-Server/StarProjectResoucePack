@@ -1,0 +1,38 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.stone_scout.charge": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"charge": "q.variant == -1"
+						}
+					]
+				},
+				"charge": {
+					"animations": [
+						"charge"
+					],
+					"transitions": [
+						{
+							"charge_attack": "q.variant == 1"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"charge_attack": {
+					"animations": [
+						"charge_attack"
+					],
+					"transitions": [
+						{
+							"default": "q.variant == 0"
+						}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		}
+	}
+}
