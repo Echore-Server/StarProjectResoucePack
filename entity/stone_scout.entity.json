@@ -10,6 +10,9 @@
 			"textures": {
 				"default": "textures/entity/stone_scout"
 			},
+			"particle_effects": {
+				"damage1": "starpve:electric_damage_100"
+			},
 			"geometry": {
 				"default": "geometry.stone_scout"
 			},
@@ -38,7 +41,8 @@
 				"zombie_attack_bare_hand": "animation.zombie.attack_bare_hand",
 				"swimming": "animation.zombie.swimming",
 				"charge": "animation.stone_scout.charge",
-				"charge_attack": "animation.stone_scout.charge_attack"
+				"charge_attack": "animation.stone_scout.charge_attack",
+				"damage1": "animation.damage.1"
 			},
 			"animation_controllers": [
 				{
