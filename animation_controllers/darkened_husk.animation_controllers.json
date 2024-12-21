@@ -5,35 +5,55 @@
 			"states": {
 				"default": {
 					"transitions": [
-						{"teleport_prepare": "q.variant == 1"}
+						{
+							"teleport_prepare": "q.variant == 1"
+						}
 					]
 				},
 				"teleport_prepare": {
 					"animations": [
-						{"teleport_prepare": "true"}
+						{
+							"teleport_prepare": "true"
+						}
 					],
 					"transitions": [
-						{"slashing": "q.variant == 2"}
+						{
+							"slashing": "q.variant == 2"
+						},
+						{
+							"default": "q.variant == 0"
+						}
 					],
 					"blend_transition": 0.3,
 					"blend_via_shortest_path": true
 				},
 				"slashing": {
 					"animations": [
-						{"slashing": "true"}
+						{
+							"slashing": "true"
+						}
 					],
 					"transitions": [
-						{"teleport_impact": "q.variant == 4"}
+						{
+							"teleport_impact": "q.variant == 4"
+						},
+						{
+							"default": "q.variant == 0"
+						}
 					],
 					"blend_transition": 0.6,
 					"blend_via_shortest_path": true
 				},
 				"teleport_impact": {
 					"animations": [
-						{"teleport_impact": "true"}
+						{
+							"teleport_impact": "true"
+						}
 					],
 					"transitions": [
-						{"default": "q.variant == 0"}
+						{
+							"default": "q.variant == 0"
+						}
 					],
 					"blend_transition": 1
 				}
