@@ -1,0 +1,85 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "starpve:phoenix.lost_wing",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/particle/kenney/muzzle_uv"
+			}
+		},
+		"components": {
+			"minecraft:emitter_rate_instant": {
+				"num_particles": 20
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 1
+			},
+			"minecraft:emitter_shape_disc": {
+				"radius": 0.75,
+				"plane_normal": [
+					"v.dx",
+					"v.dy",
+					"v.dz"
+				],
+				"direction": [
+					"v.dx",
+					"v.dy",
+					"v.dz"
+				]
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": "math.random(0.5, 0.9)"
+			},
+			"minecraft:particle_expire_if_not_in_blocks": [
+				"minecraft:air"
+			],
+			"minecraft:particle_initial_speed": "7 + v.particle_random_2 * 10",
+			"minecraft:particle_motion_dynamic": {
+				"linear_acceleration": [
+					0,
+					5,
+					0
+				],
+				"linear_drag_coefficient": 2.5
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": [
+					0.5,
+					0.35
+				],
+				"facing_camera_mode": "rotate_xyz",
+				"uv": {
+					"texture_width": 2560,
+					"texture_height": 512,
+					"flipbook": {
+						"base_UV": [
+							0,
+							0
+						],
+						"size_UV": [
+							512,
+							512
+						],
+						"step_UV": [
+							512,
+							0
+						],
+						"max_frame": 3,
+						"stretch_to_lifetime": true
+					}
+				}
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": {
+					"interpolant": "v.particle_age / v.particle_lifetime",
+					"gradient": {
+						"0.0": "#FFFF050E",
+						"0.47": "#FFFF8D00",
+						"1.0": "#00000000"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,70 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "starpve:phoenix.wing",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/particle/kenney/twirl_uv"
+			}
+		},
+		"components": {
+			"minecraft:emitter_rate_instant": {
+				"num_particles": 1
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 1
+			},
+			"minecraft:emitter_shape_point": {},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": "math.random(0.5, 0.9)"
+			},
+			"minecraft:particle_initial_spin": {
+				"rotation": "v.yaw",
+				"rotation_rate": "v.speed"
+			},
+			"minecraft:particle_initial_speed": 0,
+			"minecraft:particle_motion_dynamic": {
+				"linear_drag_coefficient": 1,
+				"rotation_drag_coefficient": 3
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": [
+					2,
+					2
+				],
+				"facing_camera_mode": "direction_y",
+				"direction": {
+					"mode": "custom",
+					"custom_direction": [
+						1,
+						0,
+						0
+					]
+				},
+				"uv": {
+					"texture_width": 1536,
+					"texture_height": 512,
+					"uv": [
+						0,
+						0
+					],
+					"uv_size": [
+						512,
+						512
+					]
+				}
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": {
+					"interpolant": "v.particle_age / v.particle_lifetime",
+					"gradient": {
+						"0.0": "#FFFF6300",
+						"0.47": "#FFFF8D00",
+						"1.0": "#00000000"
+					}
+				}
+			}
+		}
+	}
+}
