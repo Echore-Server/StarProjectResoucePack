@@ -22,7 +22,11 @@
 			},
 			"minecraft:emitter_shape_disc": {
 				"radius": 0.6,
-				"plane_normal": "y",
+				"plane_normal": [
+					"v.px ?? 0",
+					"v.py ?? 1",
+					"v.pz ?? 0"
+				],
 				"surface_only": true,
 				"direction": [
 					0,

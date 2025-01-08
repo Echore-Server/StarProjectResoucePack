@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"particle_effect": {
 		"description": {
-			"identifier": "starpve:purification_level",
+			"identifier": "starpve:raid.place_range",
 			"basic_render_parameters": {
 				"material": "particles_blend",
 				"texture": "textures/particle/particles"
@@ -14,43 +14,42 @@
 				"rotation": false
 			},
 			"minecraft:emitter_rate_steady": {
-				"spawn_rate": 25,
+				"spawn_rate": 15,
 				"max_particles": 300
 			},
-			"minecraft:emitter_lifetime_once": {
+			"minecraft:emitter_lifetime_looping": {
 				"active_time": 3
 			},
 			"minecraft:emitter_shape_disc": {
-				"radius": 0.6,
-				"plane_normal": ["v.px ?? 0", "v.py ?? 1", "v.pz ?? 0"],
-				"surface_only": true,
-				"direction": [0, -1, 0]
+				"radius": 3,
+				"plane_normal": "y",
+				"direction": "inwards"
 			},
 			"minecraft:particle_lifetime_expression": {
-				"max_lifetime": "0.5 + v.particle_random_1 * 1.5"
+				"max_lifetime": "1 + v.particle_random_2 * 3"
 			},
-			"minecraft:particle_initial_speed": 0.1,
+			"minecraft:particle_initial_speed": 0.15,
 			"minecraft:particle_motion_dynamic": {
-				"linear_acceleration": [0, -0.1, 0],
-				"linear_drag_coefficient": 2
+				"linear_acceleration": [0, "v.particle_random_1 * 1.5", 0],
+				"linear_drag_coefficient": 1
 			},
 			"minecraft:particle_appearance_billboard": {
-				"size": [0.14, 0.14],
+				"size": ["0.14 + v.particle_random_3 * 0.07", "0.14 + v.particle_random_3 * 0.07"],
 				"facing_camera_mode": "rotate_xyz",
 				"uv": {
 					"texture_width": 128,
 					"texture_height": 128,
 					"flipbook": {
-						"base_UV": ["8 * 7", "8 * 11"],
+						"base_UV": ["8 * 3", "8 * 8"],
 						"size_UV": [8, 8],
 						"step_UV": [-8, 0],
-						"max_frame": 8,
+						"max_frame": 5,
 						"stretch_to_lifetime": true
 					}
 				}
 			},
 			"minecraft:particle_appearance_tinting": {
-				"color": ["0.3 * (1.0 - v.level_ratio)", 0, "v.level_ratio", 0.5]
+				"color": [0.73725, 1, 0, 0.36863]
 			}
 		}
 	}
