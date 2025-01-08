@@ -7,7 +7,9 @@ Echoreで使用しているリソースパックです<br>
 
 Licensed under [Apache 2.0 License](./LICENSE)
 
-- [Kenney](https://kenney.nl)
+- [Kenney Particle Pack](https://kenney.nl/assets/particle-pack)
   - CC0 1.0 / Repositioned from original
+- [Kenney 1-Bit Pack](https://kenney.nl/assets/1-bit-pack)
+  - CC0 1.0
 - [Particle FX](https://ragnapixel.itch.io/particle-fx)
   - Particle FX by Raphael Hatencia, used under CC BY 4.0 / Repositioned from original
