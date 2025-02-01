@@ -12,7 +12,7 @@
 			"sparkle": {
 				"particle_effect": {
 					"effect": "starpve:inertia.vivid.sparkle",
-					"type": "emitter"
+					"type": "particle"
 				}
 			}
 		},
@@ -82,7 +82,6 @@
 			},
 			"minecraft:particle_motion_collision": {
 				"collision_radius": 0.1,
-				"expire_on_contact": true,
 				"events": [
 					{
 						"event": "sparkle",

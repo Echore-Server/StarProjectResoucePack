@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "starpve:inertia.shock_bolt",
 			"basic_render_parameters": {
-				"material": "particles_add",
+				"material": "particles_blend",
 				"texture": "textures/particle/particles"
 			}
 		},
@@ -44,7 +44,7 @@
 				"rotation": false
 			},
 			"minecraft:emitter_rate_steady": {
-				"spawn_rate": "(v.length / 0.2 / 0.1)",
+				"spawn_rate": "(v.length / 0.4 / 0.1)",
 				"max_particles": 600
 			},
 			"minecraft:emitter_lifetime_once": {
@@ -54,18 +54,12 @@
 				"creation_event": "reset"
 			},
 			"minecraft:emitter_shape_point": {
-				"offset": [
-					"v.dx * (v.count * 0.2)",
-					"v.dy * (v.count * 0.2)",
-					"v.dz * (v.count * 0.2)"
-				]
+				"offset": ["v.dx * (v.count * 0.4)", "v.dy * (v.count * 0.4)", "v.dz * (v.count * 0.4)"]
 			},
 			"minecraft:particle_lifetime_expression": {
 				"max_lifetime": "math.random(0.5, 1.0)"
 			},
-			"minecraft:particle_expire_if_not_in_blocks": [
-				"minecraft:air"
-			],
+			"minecraft:particle_expire_if_not_in_blocks": ["minecraft:air"],
 			"minecraft:particle_lifetime_events": {
 				"creation_event": "increment",
 				"expiration_event": "emission"
@@ -76,35 +70,19 @@
 			},
 			"minecraft:particle_initial_speed": "math.random(0.5, 2)",
 			"minecraft:particle_motion_dynamic": {
-				"linear_acceleration": [
-					"v.dx * 1",
-					"v.dy * 1",
-					"v.dz * 1"
-				],
+				"linear_acceleration": ["v.dx * 1", "v.dy * 1", "v.dz * 1"],
 				"linear_drag_coefficient": 3
 			},
 			"minecraft:particle_appearance_billboard": {
-				"size": [
-					"(0.05 + v.particle_random_3 * 0.5) - (v.particle_random_3 * v.scale * 0.35)",
-					"(0.05 + v.particle_random_3 * 0.5) - (v.particle_random_3 * v.scale * 0.35)"
-				],
+				"size": ["(0.05 + v.particle_random_3 * 0.5) - (v.particle_random_3 * v.scale * 0.35)", "(0.05 + v.particle_random_3 * 0.5) - (v.particle_random_3 * v.scale * 0.35)"],
 				"facing_camera_mode": "rotate_xyz",
 				"uv": {
 					"texture_width": 128,
 					"texture_height": 128,
 					"flipbook": {
-						"base_UV": [
-							"8 * 1",
-							"8 * 4"
-						],
-						"size_UV": [
-							8,
-							8
-						],
-						"step_UV": [
-							8,
-							0
-						],
+						"base_UV": ["8 * 1", "8 * 4"],
+						"size_UV": [8, 8],
+						"step_UV": [8, 0],
 						"frames_per_second": 2,
 						"max_frame": 2,
 						"stretch_to_lifetime": true
