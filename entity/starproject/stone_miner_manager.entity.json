@@ -9,6 +9,7 @@
 			},
 			"particle_effects": {
 				"trail": "starpve:stone_miner_manager.anim.trail",
+				"swing": "starpve:stone_miner_manager.anim.swing",
 				"p0": "s:p0",
 				"f0": "s:f0",
 				"w0": "s:w0",
