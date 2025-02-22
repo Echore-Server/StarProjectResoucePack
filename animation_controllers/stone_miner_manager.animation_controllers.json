@@ -82,6 +82,20 @@
 					"transitions": [
 						{
 							"default": "q.variant == 0"
+						},
+						{
+							"swing": "q.variant == 3"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"swing": {
+					"animations": [
+						"swing"
+					],
+					"transitions": [
+						{
+							"default": "q.variant == 0"
 						}
 					],
 					"blend_transition": 0.5
@@ -118,6 +132,9 @@
 						"slash2"
 					],
 					"transitions": [
+						{
+							"swing": "q.variant == 3"
+						},
 						{
 							"default": "q.variant == 0"
 						}
