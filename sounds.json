@@ -1,6 +1,23 @@
 {
 	"entity_sounds": {
 		"entities": {
+			"starproject:grassland_zombie": {
+				"events": {
+					"ambient": "mob.zombie.say",
+					"death": "mob.zombie.death",
+					"hurt": "mob.zombie.hurt",
+					"step": {
+						"pitch": 1,
+						"sound": "mob.zombie.step",
+						"volume": 0.45
+					}
+				},
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"volume": 1
+			},
 			"starproject:grim_reaper": {
 				"events": {
 					"ambient": "mob.skeleton.say",
@@ -15,7 +32,10 @@
 						"volume": 1
 					}
 				},
-				"pitch": [0.8, 1.2],
+				"pitch": [
+					0.8,
+					1.2
+				],
 				"volume": 1
 			},
 			"starproject:stone_scout": {
@@ -29,7 +49,10 @@
 						"volume": 0.35
 					}
 				},
-				"pitch": [0.8, 1.2],
+				"pitch": [
+					0.8,
+					1.2
+				],
 				"volume": 1
 			},
 			"starproject:stone_miner_manager": {
@@ -43,7 +66,10 @@
 						"volume": 0.35
 					}
 				},
-				"pitch": [0.8, 1.2],
+				"pitch": [
+					0.8,
+					1.2
+				],
 				"volume": 1
 			},
 			"starproject:awaken_husk": {
@@ -57,7 +83,10 @@
 						"volume": 0.35
 					}
 				},
-				"pitch": [0.8, 1.2],
+				"pitch": [
+					0.8,
+					1.2
+				],
 				"volume": 1
 			},
 			"starproject:darkened_husk": {
@@ -71,7 +100,10 @@
 						"volume": 0.35
 					}
 				},
-				"pitch": [0.8, 1.2],
+				"pitch": [
+					0.8,
+					1.2
+				],
 				"volume": 1
 			}
 		}
