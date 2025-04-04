@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"particle_effect": {
 		"description": {
-			"identifier": "starpve:inertia.vivid.dimension_portal",
+			"identifier": "starpve:unused.vivid.dimension_portal",
 			"basic_render_parameters": {
 				"material": "particles_blend",
 				"texture": "textures/particle/particles"
