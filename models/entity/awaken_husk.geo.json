@@ -6,7 +6,7 @@
 				"identifier": "geometry.awaken_husk",
 				"texture_width": 64,
 				"texture_height": 32,
-				"visible_bounds_width": 3,
+				"visible_bounds_width": 4,
 				"visible_bounds_height": 3,
 				"visible_bounds_offset": [0, 1.5, 0]
 			},
@@ -50,7 +50,10 @@
 				{
 					"name": "rightItem",
 					"parent": "rightArm",
-					"pivot": [-6, 15, 1]
+					"pivot": [-6, 15, 1],
+					"locators": {
+						"throw": [-6, 15, -6]
+					}
 				},
 				{
 					"name": "leftArm",

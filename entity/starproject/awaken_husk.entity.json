@@ -39,6 +39,11 @@
 				"swimming": "animation.zombie.swimming"
 			},
 			"particle_effects": {
+				"throw": "starpve:awaken_husk.throw",
+				"throw_charge": "starpve:awaken_husk.throw.charge",
+				"throw_twirl": "starpve:awaken_husk.throw.twirl",
+				"throw_impact_emit": "starpve:awaken_husk.throw.impact_emit",
+				"throw_impact": "starpve:awaken_husk.throw.impact",
 				"p0": "s:p0",
 				"f0": "s:f0",
 				"w0": "s:w0",

@@ -1,0 +1,21 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.grassland_zombie.controller": {
+			"states": {
+				"default": {
+					"transitions": [
+						{"spin": "q.variant == 1"}
+					],
+					"blend_transition": 0.4
+				},
+				"spin": {
+					"animations": ["spin"],
+					"transitions": [
+						{"default": "q.variant == 0"}
+					]
+				}
+			}
+		}
+	}
+}
