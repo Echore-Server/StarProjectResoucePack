@@ -6,9 +6,10 @@
 				"default": {
 					"transitions": [
 						{"throw": "q.variant == 1"},
-						{"throw_larger": "q.variant == 2"}
+						{"throw_larger": "q.variant == 2"},
+						{"smash": "q.variant == 3"}
 					],
-					"blend_transition": 0.25
+					"blend_transition": 0.15
 				},
 				"throw": {
 					"animations": ["throw"],
@@ -23,6 +24,14 @@
 						{"default": "q.variant == 0"}
 					],
 					"blend_transition": 0.5
+				},
+				"smash": {
+					"animations": ["smash"],
+					"transitions": [
+						{"default": "q.variant == 0"}
+					],
+					"blend_transition": 0.5,
+					"blend_via_shortest_path": true
 				}
 			}
 		}
