@@ -10,7 +10,7 @@
 		},
 		"components": {
 			"minecraft:emitter_initialization": {
-				"creation_expression": "v.deg = 0;v.deg_step = 25;v.radius = 18;v.rate = 300;v.qx = -0.312;v.qy = 0.625;v.qz = -0.1;v.qw = 0.7071;",
+				"creation_expression": "v.deg = 0;v.deg_step = 25;v.radius = 18;v.rate = 300;v.qx = 0;v.qy = 0.7071;v.qz = 0;v.qw = 0.7071;",
 				"per_update_expression": "v.radius = v.radius * 0.93 - 0.05;"
 			},
 			"minecraft:emitter_rate_steady": {
@@ -22,7 +22,7 @@
 			},
 			"minecraft:emitter_shape_point": {
 				"offset": [
-					"v.deg = v.deg + v.deg_step;v.ox = math.sin(v.deg) * v.radius;v.oz = math.cos(v.deg) * v.radius;v.oy = -0.3;v.qtx = 2 * (v.qy * v.oz - v.qz * v.oy);v.qty = 2 * (v.qz * v.ox - v.qx * v.oz);v.qtz = 2 * (v.qx * v.oy - v.qy * v.ox);v.ox = v.ox + v.qw * v.qtx + v.qy * v.qtz - v.qz * v.qty;v.oy = v.oy + v.qw * v.qty + v.qz * v.qtx - v.qx * v.qtz;v.oz = v.oz + v.qw * v.qtz + v.qx * v.qty - v.qy * v.qtx;return v.ox;",
+					"v.deg = v.deg + v.deg_step;v.ox = math.sin(v.deg) * v.radius;v.oz = math.cos(v.deg) * v.radius;v.oy = 0.0;v.qtx = 2 * (v.qy * v.oz - v.qz * v.oy);v.qty = 2 * (v.qz * v.ox - v.qx * v.oz);v.qtz = 2 * (v.qx * v.oy - v.qy * v.ox);v.ox = v.ox + v.qw * v.qtx + v.qy * v.qtz - v.qz * v.qty;v.oy = v.oy + v.qw * v.qty + v.qz * v.qtx - v.qx * v.qtz;v.oz = v.oz + v.qw * v.qtz + v.qx * v.qty - v.qy * v.qtx;return v.ox;",
 					"v.oy",
 					"v.oz"
 				],
@@ -41,8 +41,8 @@
 			},
 			"minecraft:particle_appearance_billboard": {
 				"size": [
-					"0.25 + v.particle_random_3 * 0.05",
-					"0.25 + v.particle_random_3 * 0.05"
+					"0.15 + v.particle_random_3 * 0.05",
+					"0.15 + v.particle_random_3 * 0.05"
 				],
 				"facing_camera_mode": "rotate_xyz",
 				"uv": {

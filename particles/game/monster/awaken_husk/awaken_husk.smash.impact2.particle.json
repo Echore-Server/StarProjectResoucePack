@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"particle_effect": {
 		"description": {
-			"identifier": "starpve:awaken_husk.throw.impact_larger",
+			"identifier": "starpve:awaken_husk.smash.impact2",
 			"basic_render_parameters": {
 				"material": "particles_blend",
 				"texture": "textures/particle/kenney/circle_05"
@@ -36,15 +36,14 @@
 				"active_time": 2
 			},
 			"minecraft:emitter_shape_point": {
-				"offset": [0, -2, -1],
 				"direction": [1, 0, 0]
 			},
 			"minecraft:particle_lifetime_expression": {
-				"max_lifetime": 1
+				"max_lifetime": 2.5
 			},
 			"minecraft:particle_initial_speed": 7,
 			"minecraft:particle_appearance_billboard": {
-				"size": ["0.5 + v.curve * 16", "0.5 + v.curve * 16"],
+				"size": ["20 + v.curve * 6", "20 + v.curve * 6"],
 				"facing_camera_mode": "emitter_transform_xz",
 				"uv": {
 					"texture_width": 512,
@@ -57,7 +56,7 @@
 				"color": {
 					"interpolant": "v.particle_age / v.particle_lifetime",
 					"gradient": {
-						"0.01": "#FF380000",
+						"0.01": "#FF310101",
 						"1.0": "#00000000"
 					}
 				}

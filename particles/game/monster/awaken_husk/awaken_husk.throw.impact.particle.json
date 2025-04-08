@@ -44,7 +44,7 @@
 			},
 			"minecraft:particle_initial_speed": 7,
 			"minecraft:particle_appearance_billboard": {
-				"size": ["0.5 + v.curve * 4.5", "0.5 + v.curve * 4.5"],
+				"size": ["0.5 + v.curve * 6", "0.5 + v.curve * 6"],
 				"facing_camera_mode": "emitter_transform_xz",
 				"uv": {
 					"texture_width": 512,
