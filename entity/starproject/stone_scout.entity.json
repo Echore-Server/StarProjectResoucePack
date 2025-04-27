@@ -10,7 +10,6 @@
 			"textures": {
 				"default": "textures/entity/stone_scout"
 			},
-			"particle_effects": {},
 			"geometry": {
 				"default": "geometry.stone_scout"
 			},

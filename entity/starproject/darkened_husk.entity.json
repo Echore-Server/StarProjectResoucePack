@@ -39,7 +39,6 @@
 				"slashing": "animation.darkened_husk.slashing",
 				"teleport_impact": "animation.darkened_husk.teleport_impact"
 			},
-			"particle_effects": {},
 			"animation_controllers": [
 				{
 					"humanoid_baby_big_head": "controller.animation.humanoid.baby_big_head"
