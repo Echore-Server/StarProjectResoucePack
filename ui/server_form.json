@@ -509,7 +509,7 @@
 					"$options_dropdown_toggle_label_binding_collection_name": "custom_form",
 					"$dropdown_scroll_content_size": [
 						"100%",
-						"200%"
+						"500%" // 200% -> 500%
 					],
 					"$label_bindings": [
 						{
