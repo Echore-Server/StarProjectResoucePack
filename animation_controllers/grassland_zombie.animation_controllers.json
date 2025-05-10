@@ -7,7 +7,7 @@
 					"transitions": [
 						{"spin": "q.variant == 1"}
 					],
-					"blend_transition": 0.4
+					"blend_transition": 0.5
 				},
 				"spin": {
 					"animations": ["spin"],
