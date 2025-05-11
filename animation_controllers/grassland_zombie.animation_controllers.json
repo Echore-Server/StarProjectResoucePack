@@ -10,7 +10,9 @@
 					"blend_transition": 0.5
 				},
 				"spin": {
-					"animations": ["spin"],
+					"animations": [
+						{"spin": "1"}
+					],
 					"transitions": [
 						{"default": "q.variant == 0"}
 					]
