@@ -5,7 +5,7 @@
 			"identifier": "starpve:ability_target",
 			"basic_render_parameters": {
 				"material": "particles_blend",
-				"texture": "textures/particle/particles"
+				"texture": "textures/particle/kenney/magic_03"
 			}
 		},
 		"components": {
@@ -24,31 +24,11 @@
 				"max_lifetime": "6/20"
 			},
 			"minecraft:particle_appearance_billboard": {
-				"size": [
-					0.5,
-					0.5
-				],
-				"facing_camera_mode": "lookat_y",
-				"uv": {
-					"texture_width": 128,
-					"texture_height": 128,
-					"uv": [
-						"8 *1",
-						"8 * 4"
-					],
-					"uv_size": [
-						8,
-						8
-					]
-				}
+				"size": [0.7, 0.7],
+				"facing_camera_mode": "lookat_y"
 			},
 			"minecraft:particle_appearance_tinting": {
-				"color": [
-					1,
-					0.47843,
-					0.47843,
-					1
-				]
+				"color": [1, 0.86275, 0.86275, 1]
 			}
 		}
 	}
