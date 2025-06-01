@@ -3,7 +3,6 @@
 	"minecraft:client_entity": {
 		"description": {
 			"identifier": "starproject:awaken_husk",
-			"min_engine_version": "1.8.0",
 			"materials": {
 				"default": "husk"
 			},
