@@ -51,19 +51,7 @@
 					"0.5 + v.curve * 1.5",
 					"0.5 + v.curve * 1.5"
 				],
-				"facing_camera_mode": "emitter_transform_xz",
-				"uv": {
-					"texture_width": 512,
-					"texture_height": 512,
-					"uv": [
-						0,
-						0
-					],
-					"uv_size": [
-						512,
-						512
-					]
-				}
+				"facing_camera_mode": "emitter_transform_xz"
 			},
 			"minecraft:particle_appearance_tinting": {
 				"color": {
