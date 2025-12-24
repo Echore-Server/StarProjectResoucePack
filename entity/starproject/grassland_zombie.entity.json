@@ -7,7 +7,8 @@
 				"default": "zombie"
 			},
 			"particle_effects": {
-				"spin": "starpve:grassland_zombie.spin"
+				"spin": "starpve:grassland_zombie.spin",
+				"meteor_line": "starpve:grassland_zombie.meteor_line"
 			},
 			"textures": {
 				"default": "textures/entity/grassland_zombie"

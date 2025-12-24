@@ -5,7 +5,8 @@
 			"states": {
 				"default": {
 					"transitions": [
-						{"spin": "q.variant == 1"}
+						{"spin": "q.variant == 1"},
+						{"meteor": "q.variant == 2"}
 					],
 					"blend_transition": 0.5
 				},
@@ -16,6 +17,15 @@
 					"transitions": [
 						{"default": "q.variant == 0"}
 					]
+				},
+				"meteor": {
+					"animations": [
+						{"meteor": "1"}
+					],
+					"transitions": [
+						{"default": "q.variant == 0"}
+					],
+					"blend_transition": 0.5
 				}
 			}
 		}

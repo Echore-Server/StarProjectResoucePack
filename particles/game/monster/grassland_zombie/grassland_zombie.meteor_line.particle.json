@@ -1,0 +1,127 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "starpve:grassland_zombie.meteor_line",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/particle/particles"
+			}
+		},
+		"events": {
+			"trail": {
+				"particle_effect": {
+					"effect": "starpve:grassland_zombie.meteor_line_trail",
+					"type": "particle"
+				}
+			}
+		},
+		"components": {
+			"minecraft:emitter_rate_steady": {
+				"spawn_rate": 2,
+				"max_particles": 1000
+			},
+			"minecraft:emitter_lifetime_expression": {
+				"activation_expression": 1
+			},
+			"minecraft:emitter_shape_sphere": {
+				"radius": 0.25,
+				"direction": [
+					"math.random(-0.15, 0.15)",
+					1,
+					"math.random(-0.15, 0.15)"
+				]
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": 2
+			},
+			"minecraft:particle_lifetime_events": {
+				"timeline": {
+					"0.05": "trail",
+					"0.1": "trail",
+					"0.15": "trail",
+					"0.2": "trail",
+					"0.25": "trail",
+					"0.3": "trail",
+					"0.35": "trail",
+					"0.4": "trail",
+					"0.45": "trail",
+					"0.5": "trail",
+					"0.55": "trail",
+					"0.6": "trail",
+					"0.65": "trail",
+					"0.7": "trail",
+					"0.75": "trail",
+					"0.8": "trail",
+					"0.85": "trail",
+					"0.9": "trail",
+					"0.95": "trail",
+					"1.0": "trail",
+					"1.05": "trail",
+					"1.1": "trail",
+					"1.15": "trail",
+					"1.2": "trail",
+					"1.25": "trail",
+					"1.3": "trail",
+					"1.35": "trail",
+					"1.4": "trail",
+					"1.45": "trail",
+					"1.5": "trail",
+					"1.55": "trail",
+					"1.6": "trail",
+					"1.65": "trail",
+					"1.7": "trail",
+					"1.75": "trail",
+					"1.8": "trail",
+					"1.85": "trail",
+					"1.9": "trail",
+					"1.95": "trail",
+					"2.0": "trail"
+				}
+			},
+			"minecraft:particle_initial_spin": {
+				"rotation": "v.particle_random_3 * 360",
+				"rotation_rate": "math.random(-200, 200)"
+			},
+			"minecraft:particle_initial_speed": 12,
+			"minecraft:particle_motion_dynamic": {
+				"linear_drag_coefficient": -0.5
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": [
+					"0.8 + v.particle_random_2 * 0.1",
+					"0.8 + v.particle_random_2 * 0.1"
+				],
+				"facing_camera_mode": "rotate_xyz",
+				"uv": {
+					"texture_width": 128,
+					"texture_height": 128,
+					"flipbook": {
+						"base_UV": [
+							"8 * 7",
+							0
+						],
+						"size_UV": [
+							8,
+							8
+						],
+						"step_UV": [
+							-8,
+							0
+						],
+						"frames_per_second": 3
+					}
+				}
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": {
+					"interpolant": "v.particle_random_1",
+					"gradient": {
+						"0.01": "#FFFF491C",
+						"1.0": "#FF631A00"
+					}
+				}
+			}
+		}
+	}
+}
