@@ -12,7 +12,7 @@
 			"trail": {
 				"particle_effect": {
 					"effect": "starpve:grassland_zombie.meteor_line_trail",
-					"type": "particle"
+					"type": "emitter"
 				}
 			}
 		},

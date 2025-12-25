@@ -8,7 +8,8 @@
 			},
 			"particle_effects": {
 				"spin": "starpve:grassland_zombie.spin",
-				"meteor_line": "starpve:grassland_zombie.meteor_line"
+				"meteor_line": "starpve:grassland_zombie.meteor_line",
+				"meteor_line_trail": "starpve:grassland_zombie.meteor_line_trail"
 			},
 			"textures": {
 				"default": "textures/entity/grassland_zombie"
@@ -39,7 +40,8 @@
 				"bow_and_arrow": "animation.humanoid.bow_and_arrow",
 				"use_item_progress": "animation.humanoid.use_item_progress",
 				"swimming": "animation.zombie.swimming",
-				"spin": "animation.grassland_zombie.spin"
+				"spin": "animation.grassland_zombie.spin",
+				"meteor": "animation.grassland_zombie.meteor"
 			},
 			"animation_controllers": [
 				{
