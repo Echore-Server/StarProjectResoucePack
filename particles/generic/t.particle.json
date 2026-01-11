@@ -15,7 +15,7 @@
 		},
 		"components": {
 			"minecraft:emitter_initialization": {
-				"creation_expression": "v.i = 0;v.x = math.random(-0.3, 0.3);v.y = math.random(-0.2, 0.2);v.z = math.random(-0.3, 0.3);v.dx = math.random(-0.22, 0.22);v.dy = math.random(0.8, 1.2);v.dz = math.random(-0.22, 0.22);v.d = 80345.995;v.s = (v.d - math.floor(v.d)) * 10 - 0.5;v.ma = math.random(0.8,1.2)+math.min(2,v.s*0.35);v.n = math.round(((v.d * 100) - math.floor(v.d * 100 + 0.001)) * 10);v.q = v.n - 1;"
+				"creation_expression": "v.i = 0;v.x = math.random(-0.3, 0.3);v.y = math.random(-0.2, 0.2);v.z = math.random(-0.3, 0.3);v.dx = math.random(-0.22, 0.22);v.dy = math.random(0.8, 1.2);v.dz = math.random(-0.22, 0.22);v.d = 21000.995;v.s = (v.d - math.floor(v.d)) * 10 - 0.5;v.ma = math.random(0.8,1.2)+math.min(2,v.s*0.35);v.n = math.round(((v.d * 100) - math.floor(v.d * 100 + 0.001)) * 10);v.q = v.n - 1;"
 			},
 			"minecraft:emitter_rate_instant": {
 				"num_particles": 5
