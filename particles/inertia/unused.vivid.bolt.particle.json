@@ -11,7 +11,7 @@
 		"events": {
 			"sparkle": {
 				"particle_effect": {
-					"effect": "starpve:inertia.vivid.sparkle",
+					"effect": "starpve:unused.vivid.sparkle",
 					"type": "particle"
 				}
 			}
