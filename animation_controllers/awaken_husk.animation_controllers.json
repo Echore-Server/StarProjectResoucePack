@@ -5,11 +5,13 @@
 			"states": {
 				"default": {
 					"transitions": [
-						{"throw": "q.variant == 1"},
-						{"throw_larger": "q.variant == 2"},
-						{"smash": "q.variant == 3"}
+						{"throw": "q.variant == -1"},
+						{"throw_larger": "q.variant == -2"},
+						{"smash": "q.variant == -3"},
+						{"aim": "q.variant == -4"},
+						{"stun": "q.variant == -5"}
 					],
-					"blend_transition": 0.15
+					"blend_transition": 0.14
 				},
 				"throw": {
 					"animations": ["throw"],
@@ -32,6 +34,32 @@
 					],
 					"blend_transition": 0.5,
 					"blend_via_shortest_path": true
+				},
+				"aim": {
+					"animations": ["aim"],
+					"transitions": [
+						{"aim_loop": "q.any_animation_finished"},
+						{"default": "q.variant == 0"}
+					]
+				},
+				"aim_loop": {
+					"animations": ["aim_loop"],
+					"transitions": [
+						{"default": "q.variant == 0"},
+						{"shoot": "q.variant == 1"}
+					]
+				},
+				"shoot": {
+					"animations": ["shoot"],
+					"transitions": [
+						{"default": "q.variant == 0"}
+					]
+				},
+				"stun": {
+					"animations": ["stunning"],
+					"transitions": [
+						{"default": "q.variant == 0"}
+					]
 				}
 			}
 		}

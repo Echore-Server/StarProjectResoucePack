@@ -34,8 +34,14 @@
 				"damage_nearby_mobs": "animation.humanoid.damage_nearby_mobs",
 				"bow_and_arrow": "animation.humanoid.bow_and_arrow",
 				"use_item_progress": "animation.humanoid.use_item_progress",
-				"zombie_attack_bare_hand": "animation.zombie.attack_bare_hand",
-				"swimming": "animation.zombie.swimming"
+				"swimming": "animation.zombie.swimming",
+				"throw": "animation.awaken_husk.throw",
+				"throw_larger": "animation.awaken_husk.throw_larger",
+				"smash": "animation.awaken_husk.smash",
+				"aim": "animation.awaken_husk.aim",
+				"aim_loop": "animation.awaken_husk.aim_loop",
+				"shoot": "animation.awaken_husk.shoot",
+				"stunning": "animation.awaken_husk.stunning"
 			},
 			"particle_effects": {
 				"throw": "starpve:awaken_husk.throw",
@@ -47,49 +53,16 @@
 			},
 			"animation_controllers": [
 				{
-					"humanoid_baby_big_head": "controller.animation.humanoid.baby_big_head"
-				},
-				{
 					"look_at_target": "controller.animation.humanoid.look_at_target"
 				},
 				{
 					"move": "controller.animation.humanoid.move"
 				},
 				{
-					"riding": "controller.animation.humanoid.riding"
-				},
-				{
-					"holding": "controller.animation.humanoid.holding"
-				},
-				{
-					"brandish_spear": "controller.animation.humanoid.brandish_spear"
-				},
-				{
-					"charging": "controller.animation.humanoid.charging"
-				},
-				{
 					"attack": "controller.animation.humanoid.attack"
 				},
 				{
-					"sneaking": "controller.animation.humanoid.sneaking"
-				},
-				{
-					"bob": "controller.animation.humanoid.bob"
-				},
-				{
-					"damage_nearby_mobs": "controller.animation.humanoid.damage_nearby_mobs"
-				},
-				{
-					"bow_and_arrow": "controller.animation.humanoid.bow_and_arrow"
-				},
-				{
-					"use_item_progress": "controller.animation.humanoid.use_item_progress"
-				},
-				{
-					"zombie_attack_bare_hand": "controller.animation.zombie.attack_bare_hand"
-				},
-				{
-					"swimming": "controller.animation.zombie.swimming"
+					"controller": "controller.animation.awaken_husk.controller"
 				}
 			],
 			"render_controllers": [
