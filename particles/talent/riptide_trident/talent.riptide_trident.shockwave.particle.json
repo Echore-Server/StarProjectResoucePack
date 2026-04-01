@@ -17,17 +17,12 @@
 			"minecraft:emitter_initialization": {
 				"creation_expression": "v.count = 0;v.amount = 400;v.i = 0;"
 			},
-			"minecraft:emitter_local_space": {
-				"position": true,
-				"rotation": false
-			},
 			"minecraft:emitter_rate_steady": {
 				"spawn_rate": "v.amount / 0.2",
 				"max_particles": 2000
 			},
-			"minecraft:emitter_lifetime_looping": {
-				"active_time": 0.2,
-				"sleep_time": 1
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 0.2
 			},
 			"minecraft:emitter_lifetime_events": {
 				"creation_event": "init"
@@ -42,9 +37,6 @@
 			"minecraft:particle_lifetime_expression": {
 				"max_lifetime": 0.5
 			},
-			"minecraft:particle_expire_if_not_in_blocks": [
-				"minecraft:air"
-			],
 			"minecraft:particle_lifetime_events": {
 				"creation_event": "increment"
 			},
