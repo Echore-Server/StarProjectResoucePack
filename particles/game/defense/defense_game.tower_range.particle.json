@@ -5,7 +5,7 @@
 			"identifier": "starpve:defense_game.tower_range",
 			"basic_render_parameters": {
 				"material": "particles_blend",
-				"texture": "textures/particle/kenney/circle_01"
+				"texture": "textures/particle/bloom_circle3"
 			}
 		},
 		"components": {
@@ -38,15 +38,15 @@
 				],
 				"facing_camera_mode": "emitter_transform_xz",
 				"uv": {
-					"texture_width": 512,
-					"texture_height": 512,
+					"texture_width": 256,
+					"texture_height": 256,
 					"uv": [
 						0,
 						0
 					],
 					"uv_size": [
-						512,
-						512
+						256,
+						256
 					]
 				}
 			},
