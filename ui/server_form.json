@@ -123,8 +123,8 @@
 			2
 		],
 		"size": [
-			"100%cm + 8px",
-			"100%cm + 8px"
+			"100%cm + 10px",
+			"100%cm + 10px"
 		],
 		"controls": [
 			{
@@ -133,6 +133,10 @@
 					"text": "$tooltip_text",
 					"size": [
 						"default",
+						"default"
+					],
+					"max_size": [
+						295, // yes, hardcoded 
 						"default"
 					],
 					"color": "$item_hover_text_color",
