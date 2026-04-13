@@ -7008,12 +7008,12 @@
 								"100% - 50px"
 							], // XBL Console Signin Succeeded Popup
 							"$modal_screen_size": [
-								204,
-								140
+								335,
+								275
 							], // Pop-up dialogue boxes and modal progress screens
 							"$tall_modal_screen_size": [
-								204,
-								172
+								335,
+								275
 							],
 							"$patch_notes_screen_size": [
 								300,
@@ -7188,17 +7188,17 @@
 								316,
 								"100% - 4px"
 							], // XBL Console Signin Succeeded Popup
-							"$modal_screen_size": [
-								204,
-								140
-							], // Pop-up dialogue boxes and modal progress screens
 							"$rating_prompt_screen_size": [
 								250,
 								87
 							],
+							"$modal_screen_size": [
+								335,
+								275
+							], // Pop-up dialogue boxes and modal progress screens
 							"$tall_modal_screen_size": [
-								204,
-								172
+								335,
+								275
 							],
 							"$patch_notes_screen_size": [
 								300,
