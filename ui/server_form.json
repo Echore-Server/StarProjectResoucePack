@@ -34,6 +34,36 @@
 			}
 		}
 	},
+	"generated_contents": {
+		"type": "stack_panel",
+		"size": [
+			"100%",
+			"100%c"
+		],
+		"orientation": "vertical",
+		"anchor_from": "top_left",
+		"anchor_to": "top_left",
+		"factory": {
+			"name": "buttons",
+			"control_ids": {
+				"label": "@server_form.dynamic_label_with_tooltip",
+				"toggle": "@server_form.custom_toggle",
+				"slider": "@server_form.custom_slider",
+				"step_slider": "@server_form.custom_step_slider",
+				"dropdown": "@server_form.custom_dropdown",
+				"input": "@server_form.custom_input",
+				"header": "@server_form.custom_header",
+				"divider": "@settings_common.option_group_section_divider"
+			}
+		},
+		"collection_name": "custom_form",
+		"bindings": [
+			{
+				"binding_name": "#custom_form_length",
+				"binding_name_override": "#collection_length"
+			}
+		]
+	},
 	"dynamic_label_with_tooltip@settings_common.option_group_spaced_label": {
 		"size": [
 			"100%",
