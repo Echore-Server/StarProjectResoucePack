@@ -46,7 +46,7 @@
 		"factory": {
 			"name": "buttons",
 			"control_ids": {
-				"label": "@server_form.dynamic_label_with_tooltip",
+				"label": "@server_form.custom_label_with_tooltip",
 				"toggle": "@server_form.custom_toggle",
 				"slider": "@server_form.custom_slider",
 				"step_slider": "@server_form.custom_step_slider",
@@ -61,6 +61,84 @@
 			{
 				"binding_name": "#custom_form_length",
 				"binding_name_override": "#collection_length"
+			}
+		]
+	},
+	"custom_label_with_tooltip@settings_common.option_group_spaced_label": {
+		"size": [
+			"100%",
+			"100%c - 16px"
+		],
+		"offset": [
+			0,
+			0
+		],
+		"property_bag": {
+			"#string": "",
+			"#separator": "\u200b",
+			"#search": 0,
+			"#value0": "",
+			"#value1": ""
+		},
+		"bindings": [
+			{
+				"binding_name": "#custom_text",
+				"binding_type": "collection",
+				"binding_collection_name": "custom_form"
+			},
+			{
+				"binding_type": "view",
+				"source_property_name": "#custom_text",
+				"target_property_name": "#string"
+			},
+			{
+				"binding_condition": "always",
+				"binding_type": "view",
+				"source_property_name": "(#search + 1 * ( not (('%.'+#search+'s') * #string = #string) and (('%.'+#search+'s') * #string = ('%.'+#search+'s') * #string - #separator) ))",
+				"target_property_name": "#search"
+			},
+			{
+				"binding_type": "view",
+				"source_property_name": "((('%.'+#search+'s') * #string) - #separator)",
+				"target_property_name": "#value0"
+			},
+			{
+				"binding_type": "view",
+				"source_property_name": "(#string - (('%.'+#search+'s') * #string))",
+				"target_property_name": "#value1"
+			}
+		],
+		"$text": "#text",
+		"$text_bindings": [
+			{
+				"binding_type": "view",
+				"source_control_name": "custom_label_with_tooltip",
+				"source_property_name": "#value1",
+				"target_property_name": "#text"
+			}
+		],
+		"$tooltip_text": "#tooltip_text",
+		"$tooltip_bindings": [
+			{
+				"binding_type": "view",
+				"source_control_name": "custom_label_with_tooltip",
+				"source_property_name": "#value0",
+				"target_property_name": "#tooltip_text"
+			}
+		],
+		"controls": [
+			{
+				"text@settings_common.option_group_label": {}
+			},
+			{
+				"tooltip_trigger@server_form.label_tooltip_trigger": {
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
+					"size": [
+						"100%",
+						14
+					]
+				}
 			}
 		]
 	},
